@@ -1,0 +1,16 @@
+@import "./components/styles/colors";
+
+//reset
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+}
+
+body{
+    background: $bg;
+    font-family: 'Inter', sans-serif;;
+}

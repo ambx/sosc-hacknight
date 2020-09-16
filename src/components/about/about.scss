@@ -1,0 +1,44 @@
+@import "../styles/colors";
+
+.main{
+    margin: 0 auto;
+    margin-top: 100px;
+    padding:20px 10%;;
+    max-width: 1400px;
+    h1{
+        color: $accent_blue;
+        font-weight: bolder;
+        font-size: 3rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.about{
+       
+        display: grid;
+        grid-template-columns: auto auto;
+        
+
+        .content{
+            justify-self: end;
+            margin-top: 50px;
+            max-width: 500px;
+            
+            .bold-text{
+                font-weight: bold;
+            }
+            .pink-text{
+                text-decoration: none;
+                color: $accent_pink;
+            }
+        }
+
+        .image{
+            justify-self: end;
+            img{
+                width: 80%;
+            }
+        }
+}
+

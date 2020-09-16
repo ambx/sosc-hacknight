@@ -1,0 +1,36 @@
+@import "../styles/colors";
+
+.footer{
+    
+    .imagee{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .inner-footer{
+        
+        color: white;
+        .footer-content{
+            background: #1E3A53;
+            padding:40px 10%;
+            display: grid;
+            grid-template-columns: repeat(2, auto) 30%;
+            line-height: 2rem;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                a:hover{
+                    color: $accent_blue;
+                }
+            }
+        }
+        .copyright{
+            padding:20px 10%;;
+            background: $accent_pink;
+            text-align: center;
+        }
+    }
+    
+}

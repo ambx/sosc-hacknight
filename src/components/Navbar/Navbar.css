@@ -1,0 +1,48 @@
+nav {
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 1400px;
+  padding: 30 px 10%;
+  font-size: 1rem;
+}
+
+nav ul {
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr (100px)[3];
+      grid-template-columns: 1fr repeat(3, 100px);
+  justify-items: end;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding-top: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FF8AE2;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+nav a:hover {
+  color: #93C2DB;
+}
+
+.nav-logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.nav-logo a img {
+  height: 50px;
+}
+/*# sourceMappingURL=Navbar.css.map */

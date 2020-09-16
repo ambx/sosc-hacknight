@@ -1,0 +1,41 @@
+@import "../styles/colors";
+
+
+nav{
+        margin: 0 auto;
+        margin-top: 50px;
+        max-width: 1400px;
+        padding:30 px 10%;
+        font-size: 1rem;
+
+        ul{
+            align-items: right;
+            display: grid;
+            grid-template-columns: 1fr repeat(3, 100px);
+            justify-items: end;
+
+            li{
+                list-style: none;
+                display: inline-block;
+                padding-top: 0 20px;
+            }
+        }
+        
+        a{
+            text-decoration: none;
+            color: $accent_pink;
+            transition: all 0.3s ease 0s;
+        }
+        a:hover{
+            color: $accent_blue;
+        }
+}
+
+
+.nav-logo{
+    grid-column: 1/2;
+    justify-self: start;
+    a{
+        img{
+    height: 50px;}
+}}

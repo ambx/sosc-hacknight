@@ -1,0 +1,47 @@
+.main {
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px 10%;
+  max-width: 1400px;
+}
+
+.main h1 {
+  color: #93C2DB;
+  font-weight: bolder;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.about .content {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-top: 50px;
+  max-width: 500px;
+}
+
+.about .content .bold-text {
+  font-weight: bold;
+}
+
+.about .content .pink-text {
+  text-decoration: none;
+  color: #FF8AE2;
+}
+
+.about .image {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.about .image img {
+  width: 80%;
+}
+/*# sourceMappingURL=about.css.map */
