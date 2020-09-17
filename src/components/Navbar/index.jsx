@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems'
-import './Navbar.css'
+import styles from './styles.module.scss'
 
 function Navbar() {
 
         return(
-            <nav className="NavbarItem">
+            <nav className={styles.NavbarItem}>
 
                 
 
                 <ul>
-                    <li className='nav-logo'>
+                    <li className={styles.NavLogo}>
                     <a  href="#"> 
                         <img src={require('../../assets/Icon.svg')} alt=""/>
                     </a>

@@ -1,0 +1,56 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+        
+    footer {
+        text-align: left;
+        display: block;
+        background-color: $footer_bg;
+        bottom: 0;
+        width: 100%;
+        position: relative;
+        color: white;
+        clear: both;
+    
+    
+        .infoArea {
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+            flex-direction: row;
+    
+            @include respond-below(md) {
+                flex-direction: column;
+                align-items: flex-start;
+              }
+          
+            @include respond-below (sm) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+    
+            .column {
+                display: flex;
+                flex-grow: 0;
+                flex-basis: 33.33%;
+                flex-direction: column;
+                align-content: flex-start;
+                padding: 10px;
+    
+                a {
+                    text-decoration: none;
+                    padding: 10px;
+                    color: white;
+                }
+                a:hover{
+                    color: $accent_blue;
+                }
+            }
+        }
+    
+        .copyright {
+            background-color: $accent_pink;
+            display: flex;
+            justify-content: center;
+        }
+        }

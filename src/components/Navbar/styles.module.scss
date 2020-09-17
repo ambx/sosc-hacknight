@@ -1,4 +1,5 @@
-@import "../styles/colors";
+@import "../../styles/colors";
+@import '../../styles/mixins';
 
 
 nav{
@@ -13,6 +14,13 @@ nav{
             display: grid;
             grid-template-columns: 1fr repeat(3, 100px);
             justify-items: end;
+            @include respond-below(md){
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+            @include respond-below(sm){
+                display: none;
+            }
 
             li{
                 list-style: none;
@@ -32,10 +40,11 @@ nav{
 }
 
 
-.nav-logo{
+.NavLogo{
     grid-column: 1/2;
     justify-self: start;
     a{
         img{
     height: 50px;}
+    
 }}

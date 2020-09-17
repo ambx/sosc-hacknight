@@ -1,4 +1,4 @@
-@import "./components/styles/colors";
+@import "./styles/colors";
 
 //reset
 *{
@@ -12,5 +12,6 @@
 
 body{
     background: $bg;
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
+    color: white;
 }

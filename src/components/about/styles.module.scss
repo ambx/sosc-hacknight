@@ -1,0 +1,68 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.main{
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 1400px;
+    color: white;
+    h1{
+        color: $accent_blue;
+        font-weight: bolder;
+        font-size: 3rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.about{
+       
+        display: grid;
+        grid-template-columns: 60% 40%;
+        justify-content: space-around;               
+
+        @include respond-below(sm){
+            grid-template-columns: auto; 
+            justify-content: center;
+        }
+        
+
+        .content{
+            justify-self: end;
+            margin-top: 50px;
+            max-width: 800px;
+            font-size: 1.5rem;
+            margin-left: 20px;
+            @include respond-below(md){
+                max-width: 400px;
+                font-size: 1rem;    
+                justify-self: center;   
+                margin-top: 30px;
+            }
+            @include respond-below(sm){
+                max-width: 400px;
+            }
+            
+            
+            .boldText{
+                font-weight: bold;
+            }
+            a{
+                text-decoration: none;
+                color: $accent_pink;
+            }
+            a:hover{
+                color: $accent_blue;
+            }
+        }
+
+       
+            img{
+                justify-self: end;
+                    width: 80%;
+                    @include respond-below(sm){
+                        display: none;
+                    }
+            }
+}
+

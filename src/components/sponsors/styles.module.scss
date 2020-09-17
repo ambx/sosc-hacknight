@@ -1,0 +1,51 @@
+@import "../../styles/colors";
+@import '../../styles/mixins';
+
+
+.sponsors{
+    margin: 0 auto;
+    max-width: 1400px;
+    margin-top: 50px;
+    padding:20px 10%;;
+    text-align: center;
+    h1{
+        color: $accent_blue;
+        font-weight: bolder;
+        font-size: 3rem;
+    }
+}
+
+.sponsorItem{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 50px;
+    padding:20px 10%;
+
+    @include respond-below (md){
+        grid-template-columns: repeat(3, auto);
+    }
+
+    @include respond-below (sm){
+        grid-template-columns: repeat(2,auto);
+    }
+    
+
+    li{
+        list-style: none;
+        padding: 20px;
+        a{
+            img{
+                height: 50px;
+                @include respond-below (sm){
+                    height: 30px;
+                }
+            }
+    }
+    
+    }
+}
+.Staise{
+    height: 1000x;
+}

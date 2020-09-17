@@ -1,4 +1,4 @@
-export const Sponsors = [
+export const sponsorsList = [
     {
         title:'Github',
         logo:'',
@@ -19,16 +19,17 @@ export const Sponsors = [
     },
     {
         title:'Bugsee',
-        logo: require('../../assets/sponsors/bugsee.svg'),
+        logo: require('../../assets/sponsors/bugsee.png'),
         url:'https://www.bugsee.com/',
         cName:'sponsor-member'
     },
     {
-        title:'Give My Certificate',
-        logo:require('../../assets/sponsors/GMC.png'),
-        url:'https://givemycertificate.com/',
+        title:'Clouds',
+        logo:require('../../assets/sponsors/clouds.png'),
+        url:'',
         cName:'sponsor-member'
     },
+   
     {
         title:'Matic',
         logo: require('../../assets/sponsors/matic.png'),
@@ -54,21 +55,21 @@ export const Sponsors = [
         cName:'sponsor-member'
     },
     {
-        title:'Clouds',
-        logo:'https://github.com/so-sc/open-design/blob/master/Clouds/2%20(1).png?raw=true',
-        url:'',
-        cName:'sponsor-member'
-    },
-    {
         title:'Staise',
         logo:'https://github.com/so-sc/open-design/blob/master/STAISE/STAISE_logo.jpg?raw=true',
         url:'',
-        cName:'sponsor-member'
+        cName:'Staise'
     },
     {
         title:'The Souled Store',
         logo: require('../../assets/sponsors/thesouledstore.jpg'),
         url:'https://www.thesouledstore.com/explore/t-shirts?utm_source=google&utm_medium=cpc&utm_campaign=LD_Brand_Exact_Desktop&utm_adgroup=the_souled_store&utm_term=the%20souled%20store&utm_network=g&utm_matchtype=e&utm_device=c&gclid=CjwKCAjwzIH7BRAbEiwAoDxxThtXVbMnxXCO-R-VYyzs12mO0fJSGA3Q_v71X6XKDEFszFh0yxOMWBoCODEQAvD_BwE',
         cName:'sponsor-member'
-    }
+    },
+    {
+        title:'Give My Certificate',
+        logo:require('../../assets/sponsors/GMC.png'),
+        url:'https://givemycertificate.com/',
+        cName:'sponsor-member'
+    },
 ]

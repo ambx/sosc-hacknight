@@ -1,19 +1,18 @@
 import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar/Navbar'
-import Footer from './components/footer/footer'
-import Landing from './components/landing/landing'
-import About from './components/about/about'
-import Sponsors from './components/sponsors/sponsors'
-import Prizes from './components/prizes/prizes'
+import Navbar from './components/Navbar';
+import Footer from './components/footer';
+import Hero from './components/landing';
+import About from './components/about';
+import Sponsors from './components/sponsors';
+import Prizes from './components/prizes';
+import styles from './app.module.scss'
 
 
 function App() {
   return (
-    <div className="App">
-
+    <div className={styles.App}>
           <Navbar />
-          <Landing />
+          <Hero />
           <About />
           <Prizes />
           <Sponsors />

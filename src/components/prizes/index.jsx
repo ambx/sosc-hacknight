@@ -1,9 +1,9 @@
 import React from 'react';
-import './prizes.css'
+import styles from './styles.module.scss'
 
 function Prizes(){
     return(
-        <div className="prizes">
+        <div className={styles.prizes}>
             <h1>Prizes</h1>
             <p>To be announced soon</p>
         </div>
