@@ -1,70 +1,64 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
 
-.hero{
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.hero {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    h1{
-        font-family: 'Yellowtail', cursive;
-        font-weight: normal;
-        font-size: 3.65rem;
-        transform: rotate(-5deg);
-        margin-top: 20px;
+  h1 {
+    font-family: "Yellowtail", cursive;
+    font-weight: normal;
+    font-size: 3.65rem;
+    transform: rotate(-5deg);
+    margin-top: 20px;
 
-        @include respond-below(sm){
-            margin-top: 10px;
-
-        }
-
+    @include respond-below(sm) {
+      margin-top: 10px;
     }
+  }
 
-    p{
-        margin-top: 40px;
-        color: $accent_blue;
-        font-weight: bold;
-        font-size: 1.75rem;
+  p {
+    margin-top: 40px;
+    color: $accent_blue;
+    font-weight: bold;
+    font-size: 1.75rem;
 
-        @include respond-below(sm){
-            margin-top: 20px;
-
-        }
+    @include respond-below(sm) {
+      margin-top: 20px;
     }
+  }
 
-    button{
-        margin-top: 40px;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 1.5rem;
-        background: $button;
-        border-radius: 100px;
-        height: 60px;
-        width: 209px;
-        color: white;
+  button {
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background: $button;
+    border-radius: 100px;
+    height: 60px;
+    width: 209px;
+    color: white;
+    transition: all 0.3s ease 0s;
 
-        @include respond-below(sm){
-            margin-top: 20px;
-
-        }
+    @include respond-below(sm) {
+      margin-top: 20px;
     }
-    button:hover{
-        background: $accent_pink;
-        cursor: pointer;
-    }
+  }
+  button:hover {
+    background: $accent_pink;
+    cursor: pointer;
+  }
 
-    img{
-        height: 250px;
-        @include respond-below(sm){
-            height: 160px;
-        }
-    
+  img {
+    height: 250px;
+    @include respond-below(sm) {
+      height: 160px;
     }
+  }
 }
-
-
 
 /**{
     color: white;
