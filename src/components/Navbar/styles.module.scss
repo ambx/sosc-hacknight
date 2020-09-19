@@ -6,8 +6,8 @@ nav{
         margin: 0 auto;
         margin-top: 50px;
         max-width: 1400px;
-        padding:30 px 10%;
         font-size: 1rem;
+        font-weight: bold;
 
         ul{
             align-items: right;
@@ -25,26 +25,28 @@ nav{
             li{
                 list-style: none;
                 display: inline-block;
-                padding-top: 0 20px;
+                padding-top: 20px;
             }
         }
         
         a{
             text-decoration: none;
-            color: $accent_pink;
+            color: $accent_blue;
             transition: all 0.3s ease 0s;
         }
         a:hover{
-            color: $accent_blue;
+            color: $accent_pink;
         }
 }
 
 
-.NavLogo{
-    grid-column: 1/2;
+.navLogo{
     justify-self: start;
+    align-self: center;
     a{
+        text-align: left;
         img{
-    height: 50px;}
+            height: 50px;
+}
     
 }}

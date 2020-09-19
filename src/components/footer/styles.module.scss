@@ -26,11 +26,7 @@
                 align-items: flex-start;
               }
           
-            @include respond-below (sm) {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-    
+              
             .column {
                 display: flex;
                 flex-grow: 0;

@@ -65,17 +65,19 @@
             }
         }
 
+        img{
+            width: 100%;
+
+            @include respond-below(md){
+                width: 100%;
+            }
+   
+            @include respond-below(sm){
+                display: none;
+            }
+    }
+
        
 }
 
-     img{
-             width: 100%;
-
-             @include respond-below(md){
-                 width: 100%;
-             }
-    
-             @include respond-below(sm){
-                 display: none;
-             }
-     }
+     

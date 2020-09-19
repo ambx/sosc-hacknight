@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { MenuItems } from './MenuItems'
 import styles from './styles.module.scss'
 
 function Navbar() {
@@ -7,23 +6,21 @@ function Navbar() {
         return(
             <nav className={styles.NavbarItem}>
 
-                
-
                 <ul>
-                    <li className={styles.NavLogo}>
+                    <li className={styles.navLogo}>
                     <a  href="#"> 
                         <img src={require('../../assets/Icon.svg')} alt=""/>
                     </a>
                     </li>
-                    {MenuItems.map((item, index ) => {
-                        return(
-                            <li key={index}>
-                                <a className= {item.cName} href={item.url}>
-                                    {item.title}
-                                </a>
-                            </li>
-                        )
-                    })}
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                    <li>
+                        <a href="">Prizes</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
                     
                 </ul>
             </nav>
