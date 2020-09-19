@@ -1,49 +1,50 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
 
-.prizes{
-    margin: 0 auto;
-    margin-top: 30px;
-    max-width: 1400px;
-    padding:20px 10%;;
-    text-align: center;
-    .title{
-        color: $accent_blue;
-        font-weight: bolder;
-        font-size: 3rem;
+.prizes {
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 1400px;
+  padding: 20px 10%;
+  text-align: center;
+  .title {
+    color: $accent_blue;
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+  .content {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include respond-below(sm) {
+      flex-direction: column;
     }
-    .content{
-        width: 100%;
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
 
-        @include respond-below(sm) {
-            flex-direction: column;
-        }
+    .prizeCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 300px;
+      width: 300px;
+      background: #193862;
+      border-radius: 0 80px 0 80px;
 
-        .prizeCard {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 300px;
-            width: 300px;
-            background:#193862;
-            border-radius: 0 30px 0 30px;
+      @include respond-below(sm) {
+        margin-bottom: 3rem;
+        height: 250px;
+      }
 
-            @include respond-below(sm) { 
-            margin-bottom: 3rem;
-            }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+      }
 
-            h1 {
-                font-size: 2rem;
-                margin-bottom: 4rem;
-            }
-
-            p {
-                font-size: 1.6rem;
-            }
-        }
+      p {
+        font-size: 1.6rem;
+      }
     }
+  }
 }

@@ -2,11 +2,12 @@
 @import "../../styles/mixins";
 
 .hero {
-  height: 85vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 
   h1 {
     font-family: "Yellowtail", cursive;
@@ -15,8 +16,10 @@
     transform: rotate(-5deg);
     margin-top: 20px;
 
+
     @include respond-below(sm) {
       margin-top: 10px;
+      margin-bottom: 20px;
     }
   }
 
@@ -28,6 +31,7 @@
 
     @include respond-below(sm) {
       margin-top: 20px;
+      margin-bottom: 20px;
     }
   }
 
@@ -56,6 +60,7 @@
     height: 250px;
     @include respond-below(sm) {
       height: 160px;
+      margin-bottom: 30px;
     }
   }
 }
