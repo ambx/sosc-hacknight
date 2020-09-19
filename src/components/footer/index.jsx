@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 function Footer() {
     return(
 
-            <footer>
+            <footer id="footer">
     <div className={styles.container}>
       <div className={styles.infoArea}>
         <div className={styles.column}>
@@ -16,7 +16,7 @@ function Footer() {
         </div>
         <div className={styles.column}>
           <a href="https://github.com/so-sc/code-of-conduct">Community Guidelines</a>
-          <a href="https://github.com/so-sc/code-of-conduct">Code of Conduct</a>
+          <a href="https://devfolio.co/code-of-conduct">Code of Conduct</a>
         </div>
         <div className={styles.column}>
           <p>

@@ -1,6 +1,66 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
 
+.hero{
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+
+    h1{
+        font-family: 'Yellowtail', cursive;
+        font-weight: normal;
+        font-size: 3.65rem;
+        transform: rotate(-5deg);
+        margin-top: 20px;
+
+        @include respond-below(sm){
+            margin-top: 10px;
+
+        }
+
+    }
+
+    p{
+        margin-top: 40px;
+        color: $accent_blue;
+        font-weight: bold;
+        font-size: 1.75rem;
+
+        @include respond-below(sm){
+            margin-top: 20px;
+
+        }
+    }
+
+    button{
+        margin-top: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5rem;
+        background: $button;
+        border-radius: 100px;
+        height: 60px;
+        width: 209px;
+        color: white;
+
+        @include respond-below(sm){
+            margin-top: 20px;
+
+        }
+    }
+    button:hover{
+        background: $accent_pink;
+        cursor: pointer;
+    }
+
+    img{
+        height: 250px;
+        @include respond-below(sm){
+            height: 160px;
+        }
+    
+    }
+}
 
 
 
