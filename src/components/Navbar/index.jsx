@@ -13,10 +13,13 @@ function Navbar() {
                     </a>
                     </li>
                     <li>
-                        <a href="">Code of Conduct</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="">Contact</a>
+                        <a href="https://devfolio.co/code-of-conductt">Code of Conduct</a>
+                    </li>
+                    <li>
+                        <a href="#footer">Contact</a>
                     </li>
                     
                 </ul>

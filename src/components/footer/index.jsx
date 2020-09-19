@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 function Footer() {
     return(
 
-            <footer>
+            <footer id="footer">
     <div className={styles.container}>
       <div className={styles.infoArea}>
         <div className={styles.column}>
