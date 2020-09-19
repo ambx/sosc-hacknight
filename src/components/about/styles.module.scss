@@ -6,20 +6,29 @@
     margin-top: 100px;
     max-width: 1400px;
     color: white;
+    padding: 20px 10%;
     h1{
         color: $accent_blue;
         font-weight: bolder;
         font-size: 3rem;
-        text-align: center;
         margin: 0 auto;
+        text-align: center;
     }
 }
 
 .about{
        
         display: grid;
-        grid-template-columns: 60% 40%;
-        justify-content: space-around;               
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        justify-content: space-between;     
+        font-weight: 300;    
+        line-height: 40px;      
+
+        @include respond-below(md){
+            grid-template-columns: 1.5fr 1fr;
+            gap: 25px
+        }
 
         @include respond-below(sm){
             grid-template-columns: auto; 
@@ -29,13 +38,13 @@
 
         .content{
             justify-self: end;
+            text-align: justify;
             margin-top: 50px;
             max-width: 800px;
-            font-size: 1.5rem;
+            font-size: 1rem;
             margin-left: 20px;
             @include respond-below(md){
                 max-width: 400px;
-                font-size: 1rem;    
                 justify-self: center;   
                 margin-top: 30px;
             }
@@ -56,13 +65,19 @@
             }
         }
 
-       
-            img{
-                justify-self: end;
-                    width: 80%;
-                    @include respond-below(sm){
-                        display: none;
-                    }
+        img{
+            width: 100%;
+
+            @include respond-below(md){
+                width: 100%;
             }
+   
+            @include respond-below(sm){
+                display: none;
+            }
+    }
+
+       
 }
 
+     

@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 function Footer() {
   return (
-    <footer>
+    <footer id="footer">
       <div className={styles.container}>
         <div className={styles.infoArea}>
           <div className={styles.column}>
@@ -13,12 +13,10 @@ function Footer() {
             <a href="https://twitter.com/sahyadri_osc">Twitter</a>
           </div>
           <div className={styles.column}>
-            <a className={styles.center} href="https://github.com/so-sc/code-of-conduct">
+            <a href="https://github.com/so-sc/code-of-conduct">
               Community Guidelines
             </a>
-            <a className={styles.center} href="https://github.com/so-sc/code-of-conduct">
-              Code of Conduct
-            </a>
+            <a href="https://devfolio.co/code-of-conduct">Code of Conduct</a>
           </div>
           <div className={styles.column}>
             <p>
@@ -34,8 +32,7 @@ function Footer() {
             </p>
           </div>
         </div>
-      </div>
-      <div className={styles.copyright}>
+        <div className={styles.copyright}></div>
         <p>SOSC © {new Date().getFullYear()}</p>
       </div>
     </footer>

@@ -1,14 +1,66 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
 
-.prizes{
+.prizes {
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 1400px;
+  padding: 20px 10%;
+  text-align: center;
+  .title {
+    color: $accent_blue;
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+  .content {
     margin: 0 auto;
-    margin-top: 30px;
-    max-width: 1400px;
-    padding:20px 10%;;
     text-align: center;
-    h1{
-        color: $accent_blue;
-        font-weight: bolder;
-        font-size: 3rem;
+    margin-top: 50px;
+
+    .prizeCard {
+      margin: 0 auto;
+      text-align: center;
+
+      ul {
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-wrap: wrap;
+
+        
+
+        li {
+          display: flex;
+          justify-content: space-evenly;
+          align-content: center;
+          flex-direction: column;
+          list-style: none;
+          height: 200px;
+          width: 200px;
+          background: #193862;
+          border-radius: 15px;
+          padding: 50px;
+          text-align: center;
+          color: white;
+
+          @include respond-below(md) {
+            width: 180px;
+            margin: 5% 0;
+           
+          }
+
+          h1 {
+            font-size: 2.5rem;
+          }
+
+          p {
+            font-size: 1.5rem;
+            color: $accent_pink;
+          }
+        }
+      }
     }
+  }
 }

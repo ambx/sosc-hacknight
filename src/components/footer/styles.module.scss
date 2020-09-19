@@ -18,17 +18,15 @@
             padding: 10px;
             justify-content: space-between;
             flex-direction: row;
+            padding: 20px 10%;
+
     
             @include respond-below(md) {
                 flex-direction: column;
                 align-items: flex-start;
               }
           
-            @include respond-below (sm) {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-    
+              
             .column {
                 display: flex;
                 flex-grow: 0;
@@ -55,5 +53,6 @@
             background-color: $accent_pink;
             display: flex;
             justify-content: center;
+            align-self: center;
         }
         }
