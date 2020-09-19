@@ -19,7 +19,8 @@ nav{
                 padding-left: 20px;
             }
             @include respond-below(sm){
-                display: none;
+                // display: none;
+                max-width: max-content;;
             }
 
             li{
