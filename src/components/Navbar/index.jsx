@@ -4,14 +4,12 @@ import styles from "./styles.module.scss";
 function Navbar() {
   return (
     <nav className={styles.NavbarItem}>
-
       <div className={styles.navLogo}>
         <a href="#">
           <img src={require("../../assets/Icon.svg")} alt="" />
         </a>
       </div>
 
-      
       <ul>
         <li>
           <a href="#about">About</a>

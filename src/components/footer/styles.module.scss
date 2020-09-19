@@ -36,11 +36,9 @@ footer {
         padding: 10px;
         color: white;
       }
-      .center {
-        color: $accent_pink;
-      }
+      
       a:hover {
-        color: $accent_blue;
+        color: $accent_pink;
       }
     }
   }
@@ -53,6 +51,7 @@ footer {
   }
   .endline{
       text-align: center;
+      padding: 10px;
       background-color: $accent_pink;
   }
 }

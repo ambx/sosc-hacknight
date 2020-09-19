@@ -3,7 +3,7 @@
 
 nav {
   margin: 0 8%;
-  margin-top: 50px;
+  margin-top: 7px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -11,13 +11,16 @@ nav {
   font-weight: bold;
   overflow: hidden;
   align-items: baseline;
-    @include respond-below(sm) {
-        justify-content: center;
-    }
-  
+  min-height: 120px;
+
+  @include respond-below(sm) {
+    justify-content: center;
+    margin-top: 35px;
+  }
 
   ul {
     // align-items: right;
+    padding-top: 30px;
     display: flex;
     justify-content: space-around;
     width: 35%;
@@ -65,9 +68,16 @@ nav {
 .navLogo {
   align-self: center;
   a {
-    text-align: left;
+    text-align: center;
     img {
       height: 80px;
+      transition: all 0.5s ease 0s;
+      @include respond-below(sm) {
+        height: 60px;
+      }
+    }
+    img:hover {
+      height: 100px;
     }
   }
 }
