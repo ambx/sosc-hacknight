@@ -11,6 +11,7 @@ import styles from './app.module.scss'
 function App() {
   return (
     <div className={styles.App}>
+          <Navbar />
           <Hero />
           <About />
           <Prizes />
