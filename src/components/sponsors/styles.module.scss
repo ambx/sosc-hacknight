@@ -24,11 +24,11 @@
     padding:20px 10%;
 
     @include respond-below (md){
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
     }
 
     @include respond-below (sm){
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: auto;
     }
     
 
@@ -37,15 +37,12 @@
         padding: 20px;
         a{
             img{
-                height: 50px;
-                @include respond-below (sm){
-                    height: 30px;
+                height: 70px;
+                @include respond-below (md){
+                    height: 50px;
                 }
             }
     }
     
     }
-}
-.Staise{
-    height: 1000x;
 }
