@@ -10,6 +10,7 @@ nav {
   font-size: 1rem;
   font-weight: bold;
   overflow: hidden;
+  align-items: baseline;
     @include respond-below(sm) {
         justify-content: center;
     }
@@ -66,7 +67,7 @@ nav {
   a {
     text-align: left;
     img {
-      height: 50px;
+      height: 80px;
     }
   }
 }
