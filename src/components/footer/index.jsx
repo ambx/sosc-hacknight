@@ -13,10 +13,10 @@ function Footer() {
             <a href="https://twitter.com/sahyadri_osc">Twitter</a>
           </div>
           <div className={styles.column}>
-            <a href="https://github.com/so-sc/code-of-conduct">
+            <a className={styles.center} href="https://github.com/so-sc/code-of-conduct">
               Community Guidelines
             </a>
-            <a href="https://devfolio.co/code-of-conduct">Code of Conduct</a>
+            <a className={styles.center} href="https://devfolio.co/code-of-conduct">Code of Conduct</a>
           </div>
           <div className={styles.column}>
             <p>
@@ -33,7 +33,9 @@ function Footer() {
           </div>
         </div>
         <div className={styles.copyright}></div>
+        <div className={styles.endline} >
         <p>SOSC © {new Date().getFullYear()}</p>
+        </div>
       </div>
     </footer>
   );
