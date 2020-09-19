@@ -13,13 +13,10 @@ function Navbar() {
                     </a>
                     </li>
                     <li>
+                        <a href="">Code of Conduct</a>
+                    </li>
+                    <li>
                         <a href="">Contact</a>
-                    </li>
-                    <li>
-                        <a href="">Prizes</a>
-                    </li>
-                    <li>
-                        <a href="">About</a>
                     </li>
                     
                 </ul>

@@ -12,7 +12,7 @@ nav{
         ul{
             align-items: right;
             display: grid;
-            grid-template-columns: 1fr repeat(3, 100px);
+            grid-template-columns: 1fr repeat(3, 150px);
             justify-items: end;
             @include respond-below(md){
                 padding-right: 20px;

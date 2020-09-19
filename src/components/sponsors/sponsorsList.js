@@ -1,22 +1,17 @@
 export const sponsorsList = [
     {
         title:'Github',
-        logo:'',
+        logo:require('../../assets/sponsors/github.png'),
         url:'https://github.com/',
         cName:'sponsor-member'
     },
     {
         title:'Devfolio',
-        logo: 'https://raw.githubusercontent.com/devfolioco/brand-assets/071f9a92d270dc42addc0457470fe4e2fe405b56/Logo%20%2B%20Text%20-%20White/Devfolio%20-%20White.svg',
+        logo: require('../../assets/sponsors/devfolio.png'),
         url:'https://devfolio.co/',
         cName:'sponsor-member'
     },
-    {
-        title:'CoffeeHours',
-        logo:'',
-        url:'',
-        cName:'sponsor-member'
-    },
+   
     {
         title:'Bugsee',
         logo: require('../../assets/sponsors/bugsee.png'),
@@ -38,13 +33,13 @@ export const sponsorsList = [
     },
     {
         title:'Portis',
-        logo: require('../../assets/sponsors/portis.svg'),
+        logo: require('../../assets/sponsors/portis.png'),
         url:'https://www.portis.io/',
         cName:'sponsor-member'
     },
     {
         title:'Fold',
-        logo: require('../../assets/sponsors/fold.svg'),
+        logo: require('../../assets/sponsors/fold.png'),
         url:'https://fold.money/',
         cName:'sponsor-member'
     },
@@ -56,13 +51,13 @@ export const sponsorsList = [
     },
     {
         title:'Staise',
-        logo:'https://github.com/so-sc/open-design/blob/master/STAISE/STAISE_logo.jpg?raw=true',
+        logo: require('../../assets/sponsors/staise.png'),
         url:'',
         cName:'Staise'
     },
     {
         title:'The Souled Store',
-        logo: require('../../assets/sponsors/thesouledstore.jpg'),
+        logo: require('../../assets/sponsors/tss.png'),
         url:'https://www.thesouledstore.com/explore/t-shirts?utm_source=google&utm_medium=cpc&utm_campaign=LD_Brand_Exact_Desktop&utm_adgroup=the_souled_store&utm_term=the%20souled%20store&utm_network=g&utm_matchtype=e&utm_device=c&gclid=CjwKCAjwzIH7BRAbEiwAoDxxThtXVbMnxXCO-R-VYyzs12mO0fJSGA3Q_v71X6XKDEFszFh0yxOMWBoCODEQAvD_BwE',
         cName:'sponsor-member'
     },
