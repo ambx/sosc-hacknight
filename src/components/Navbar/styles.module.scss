@@ -10,6 +10,10 @@ nav {
   font-size: 1rem;
   font-weight: bold;
   overflow: hidden;
+    @include respond-below(sm) {
+        justify-content: center;
+    }
+  
 
   ul {
     // align-items: right;
@@ -29,10 +33,14 @@ nav {
       width: 60%;
     }
     @include respond-below(sm) {
-      width: 60%;
+      padding-right: 10px;
+      padding-left: 10px;
+      width: 100%;
     }
     @include respond-below(xs) {
-      width: 70%;
+      padding-right: 10px;
+      padding-left: 10px;
+      width: 100%;
     }
 
     li {
@@ -54,7 +62,6 @@ nav {
 }
 
 .navLogo {
-  justify-self: start;
   align-self: center;
   a {
     text-align: left;
