@@ -2,9 +2,11 @@
 @import "../../styles/mixins";
 
 .hero{
-    margin: 0 auto;
-    margin-top: 40px;
-    text-align: center;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     h1{
         font-family: 'Yellowtail', cursive;
