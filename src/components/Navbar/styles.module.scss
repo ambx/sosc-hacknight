@@ -1,52 +1,84 @@
 @import "../../styles/colors";
-@import '../../styles/mixins';
+@import "../../styles/mixins";
 
+nav {
+  margin: 0 8%;
+  margin-top: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: bold;
+  overflow: hidden;
+  align-items: baseline;
+  min-height: 120px;
 
-nav{
-        margin: 0 8%;
-        margin-top: 50px;
-        max-width: 1400px;
-        font-size: 1rem;
-        font-weight: bold;
+  @include respond-below(sm) {
+    justify-content: center;
+    margin-top: 35px;
+  }
 
-        ul{
-            align-items: right;
-            display: grid;
-            grid-template-columns: 1fr repeat(3, 150px);
-            justify-items: center;
-            @include respond-below(md){
-                padding-right: 20px;
-                padding-left: 20px;
-            }
-            @include respond-below(sm){
-                display: none;
-            }
+  ul {
+    // align-items: right;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
 
-            li{
-                list-style: none;
-                display: inline-block;
-                padding-top: 20px;
-            }
-        }
-        
-        a{
-            text-decoration: none;
-            color: $accent_blue;
-            transition: all 0.3s ease 0s;
-        }
-        a:hover{
-            color: $accent_pink;
-        }
+    @include respond-below(lg) {
+      padding-right: 20px;
+      padding-left: 20px;
+      width: 40%;
+    }
+
+    @include respond-below(md) {
+      padding-right: 15px;
+      padding-left: 15px;
+      width: 60%;
+    }
+    @include respond-below(sm) {
+      padding-right: 10px;
+      padding-left: 10px;
+      width: 100%;
+    }
+    @include respond-below(xs) {
+      padding-right: 10px;
+      padding-left: 10px;
+      width: 100%;
+    }
+
+    li {
+      list-style: none;
+      //   display: inline-block;
+      padding-top: 20px;
+      text-align: center;
+    }
+  }
+
+  a {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: $accent_blue;
+    transition: all 0.3s ease 0s;
+  }
+  a:hover {
+    color: $accent_pink;
+  }
 }
 
-
-.navLogo{
-    justify-self: start;
-    align-self: center;
-    a{
-        text-align: left;
-        img{
-            height: 50px;
+.navLogo {
+  align-self: center;
+  a {
+    text-align: center;
+    img {
+      height: 80px;
+      transition: all 0.5s ease 0s;
+      @include respond-below(sm) {
+        height: 60px;
+      }
+    }
+    img:hover {
+      scale: 1.2;
+    }
+  }
 }
-    
-}}
