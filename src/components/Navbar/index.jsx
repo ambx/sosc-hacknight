@@ -21,14 +21,6 @@ function Navbar() {
           <a href="#footer">Contact</a>
         </li>
       </ul>
-      <div className={styles.toggle}>
-        <label className={styles.menu}>
-          <div className={styles.hamburger}></div>
-          <div className={styles.hamburger}></div>
-          <div className={styles.hamburger}></div>
-          <input className={styles.check} type="checkbox"></input>
-        </label>
-      </div>
     </nav>
   );
 }
