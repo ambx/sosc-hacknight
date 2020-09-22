@@ -40,11 +40,6 @@ nav {
     @include respond-below(sm) {
       display: none;
     }
-    @include respond-below(xs) {
-      padding-right: 10px;
-      padding-left: 10px;
-      width: 100%;
-    }
 
     li {
       list-style: none;
