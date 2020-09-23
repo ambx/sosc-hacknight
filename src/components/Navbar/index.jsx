@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className={styles.NavbarItem}>
       <div className={styles.navLogo}>
-        <a href="#">
+        <a href="/">
           <img src={require("../../assets/Icon.svg")} alt="" />
         </a>
       </div>
