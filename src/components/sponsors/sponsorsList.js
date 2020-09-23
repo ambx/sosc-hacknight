@@ -11,7 +11,12 @@ export const sponsorsList = [
         url:'https://devfolio.co/',
         cName:'sponsor-member'
     },
-   
+    {
+        title:'CoffeeHours',
+        logo: require('../../assets/sponsors/coffeehours.png'),
+        url:'https://www.coffeehours.club/',
+        cName:'sponsor-member'
+    },
     {
         title:'Bugsee',
         logo: require('../../assets/sponsors/bugsee.png'),

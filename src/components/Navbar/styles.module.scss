@@ -13,10 +13,10 @@ nav {
   align-items: baseline;
   min-height: 120px;
 
+  
+  
   @include respond-below(sm) {
-    justify-content: center;
-    margin-top: 35px;
-    margin: 40px 5%;
+    margin-top: -45px;
   }
 
   ul {
@@ -24,25 +24,21 @@ nav {
     padding-top: 30px;
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 35%;
 
     @include respond-below(lg) {
       padding-right: 20px;
       padding-left: 20px;
-      width: 50%;
+      width: 40%;
     }
 
     @include respond-below(md) {
       padding-right: 15px;
       padding-left: 15px;
-      width: 65%;
+      width: 60%;
     }
     @include respond-below(sm) {
-      padding-top: 15px;
-      width: 100%;
-    }
-    @include respond-below(xs) {
-      width: 100%;
+      display: none;
     }
 
     li {
@@ -54,16 +50,11 @@ nav {
   }
 
   a {
-    font-size: 1.3em;
+    font-size: 1em;
     text-decoration: none;
     color: $accent_blue;
     transition: all 0.3s ease 0s;
-    @include respond-below(sm) {
-      font-size: 1.1em;
-    }
-    @include respond-below(xs) {
-      font-size: 1em;
-    }
+
   }
   a:hover {
     color: $accent_pink;
@@ -78,7 +69,7 @@ nav {
       height: 80px;
       transition: all 0.5s ease 0s;
       @include respond-below(sm) {
-        height: 60px;
+        display: none;
       }
     }
     img:hover {
