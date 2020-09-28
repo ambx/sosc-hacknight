@@ -35,15 +35,17 @@
 
     li{
         list-style: none;
+        align-self: center;
         padding: 20px;
         a{
             img{
-                height: 70px;
+                width: 150px;
                 @include respond-below (md){
-                    height: 50px;
+                    width: 80px;
                 }
             }
     }
     
     }
+
 }

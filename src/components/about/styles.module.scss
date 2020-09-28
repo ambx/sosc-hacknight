@@ -2,11 +2,15 @@
 @import "../../styles/mixins";
 
 .main{
-    margin: 0 auto;
     margin-top: 100px;
     max-width: 1400px;
     color: white;
     padding: 20px 10%;
+
+    @include respond-below(sm){
+        padding: 20px 5%;
+    }
+    
     h1{
         color: $accent_blue;
         font-weight: bolder;
