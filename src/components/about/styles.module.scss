@@ -6,6 +6,7 @@
     max-width: 1400px;
     color: white;
     padding: 20px 10%;
+    scroll-behavior: smooth;
 
     @include respond-below(sm){
         margin-left: -20px;
