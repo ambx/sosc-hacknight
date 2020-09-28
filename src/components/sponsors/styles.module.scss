@@ -41,7 +41,7 @@
             img{
                 width: 150px;
                 @include respond-below (md){
-                    width: 80px;
+                    width: 120px;
                 }
             }
     }
