@@ -15,7 +15,7 @@ function Navbar() {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="https://devfolio.co/code-of-conductt">Code of Conduct</a>
+          <a href="https://devfolio.co/code-of-conduct">Code of Conduct</a>
         </li>
         <li>
           <a href="#footer">Contact</a>
