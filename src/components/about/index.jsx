@@ -14,7 +14,7 @@ function About(){
                 <span className={styles.boldText}>Hack Night </span>
                  is a 
                  <span className={styles.boldText}> 28-hour </span>
-                  long hackthon organized by 
+                  long hackathon organized by 
                    <a  href="https://sosc.org.in/"> Sahyadri Open Source Community (SOSC) </a>
                    in celebration of Hacktoberfest 2020. 
                    <a  href="https://hacktoberfest.digitalocean.com/"> Hacktoberfest </a>
