@@ -5,7 +5,7 @@ import { sponsorsList } from "./sponsorsList";
 function Sponsors() {
   return (
     <div className={styles.sponsors}>
-      <a className={styles.sponsorBtn} href=""><h2>Sponsor Us</h2></a>
+      <a className={styles.sponsorBtn} href="/"><h2>Sponsor Us</h2></a>
       <h1>Our Previous Sponsors</h1>
 
       <ul className={styles.sponsorItem}>
