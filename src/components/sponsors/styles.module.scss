@@ -1,6 +1,19 @@
 @import "../../styles/colors";
 @import '../../styles/mixins';
 
+.sponsorBtn {
+    padding: 20px 40px;
+    background-color: $light_bg;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+
+    h2 {
+        color: $accent_blue;
+        font-size: 1.2rem;
+    }
+}
 
 .sponsors{
     margin: 0 auto;

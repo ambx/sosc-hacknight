@@ -5,7 +5,8 @@ import { sponsorsList } from "./sponsorsList";
 function Sponsors() {
   return (
     <div className={styles.sponsors}>
-      <h1>Our Sponsors</h1>
+      <a className={styles.sponsorBtn} href=""><h2>Sponsor Us</h2></a>
+      <h1>Our Previous Sponsors</h1>
 
       <ul className={styles.sponsorItem}>
         {sponsorsList.map((item, index) => {
